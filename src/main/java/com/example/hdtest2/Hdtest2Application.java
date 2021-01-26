@@ -22,10 +22,10 @@ public class Hdtest2Application {
 	RestTemplate restTemplate;
 
 	@GetMapping("/hdtest2")
-	public String hdtest2(@RequestParam(value = "name", defaultValue = "World") String name) throws IOException {
+	public String hdtest2(@RequestParam(value = "name", defaultValue = "hedu") String name) throws IOException {
 
 		String url = "http://hdtest1/getdate1";
-		return String.format(restTemplate.getForObject(url,String.class));
+		return String.format(restTemplate.getForObject(url,String.class) + ", I am %s\n",name);
 
 	}
 
