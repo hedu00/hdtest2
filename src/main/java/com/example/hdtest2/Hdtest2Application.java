@@ -24,7 +24,7 @@ public class Hdtest2Application {
 	@GetMapping("/hdtest2")
 	public String hdtest2(@RequestParam(value = "name", defaultValue = "World") String name) throws IOException {
 
-		String url = "http://hdtest1/getdate";
+		String url = "http://hdtest1/getdate1";
 		return String.format(restTemplate.getForObject(url,String.class));
 
 	}
@@ -34,7 +34,7 @@ public class Hdtest2Application {
 
 		Date date = new Date() ;
 
-		return String.format(" --> NSF: hdtest2 v2: " + date.toString() + " <-- \n");
+		return String.format(" --> This is hdtest2 v1: " + date.toString() + " <-- \n");
 
 	}
 }
