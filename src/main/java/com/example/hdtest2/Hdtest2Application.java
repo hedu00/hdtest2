@@ -25,7 +25,7 @@ public class Hdtest2Application {
 	public String hdtest2(@RequestParam(value = "name", defaultValue = "hedu") String name) throws IOException {
 
 		String url = "http://hdtest1/getdate1";
-		return String.format(restTemplate.getForObject(url,String.class) + ", I am %s\n",name);
+		return String.format(restTemplate.getForObject(url,String.class) + "I am %s\n",name);
 
 	}
 
@@ -34,7 +34,7 @@ public class Hdtest2Application {
 
 		Date date = new Date() ;
 
-		return String.format(" --> This is hdtest2 v2: " + date.toString() + " <-- \n");
+		return String.format(" --> This is hdtest2 v1: " + date.toString() + " <-- \n");
 
 	}
 }
