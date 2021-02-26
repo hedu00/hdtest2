@@ -12,4 +12,4 @@ ADD napm-agent.properties /napm-agent.properties
 
 
 #ENTRYPOINT ["java","-javaagent:/nsf-agent.jar=hdtest2","-jar","/hdtest2.jar"]
-ENTRYPOINT ["java","-Dnsf.log.level=debug","-javaagent:/nsf-agent.jar=hdtest1","-javaagent:/napm-java-agent/napm-java-rewriter.jar=conf=/napm-agent.properties","-jar","/hdtest1.jar"]
+ENTRYPOINT ["java","-Dnsf.log.level=debug","-javaagent:/nsf-agent.jar=hdtest2","-javaagent:/napm-java-agent/napm-java-rewriter.jar=conf=/napm-agent.properties","-jar","/hdtest2.jar"]
