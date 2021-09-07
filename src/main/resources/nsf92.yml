@@ -1,0 +1,21 @@
+nsf:
+  type: http
+  version: '2.0'
+  nsfServer: 'http://nsf-server-cust92-env2.netease.com'
+  application:
+    name: hdtest2
+    version: v1
+    projectCode: hucg-pro
+    envCode: prod2
+    zone: default
+    group: default
+    tags: []
+  authority:
+    accessKey: 1e90c7df26d343a693fb1facf8c8d1ea
+    secretKey: 905026495a2b49158d97ee470cf382e0
+  manager:
+    patterns:
+      - className: com.example.hdtest2.Hdtest2Application
+        methods:
+          - name: hdtest2
+          - name: getdate2

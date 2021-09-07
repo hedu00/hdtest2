@@ -34,7 +34,7 @@ public class Hdtest2Application {
 
 		Date date = new Date() ;
 
-		return String.format(" --> This is hdtest2 v2: " + date.toString() + " <-- \n");
+		return String.format(" --> This is hdtest2 v1: " + date.toString() + " <-- \n");
 
 	}
 }

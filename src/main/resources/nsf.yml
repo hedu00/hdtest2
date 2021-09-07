@@ -1,0 +1,21 @@
+nsf:
+  type: http
+  version: '2.0'
+  nsfServer: 'http://nsf-server-poc666.netease.com'
+  application:
+    name: hdtest2
+    version: v1
+    projectCode: hdpro
+    envCode: prod
+    zone: default
+    group: default
+    tags: []
+  authority:
+    accessKey: 4f7ca5c25f2e4fb4bdb3b418c15886bb
+    secretKey: cd2052d2a78149ef867e965fc5afadc0
+  manager:
+    patterns:
+      - className: com.example.hdtest2.Hdtest2Application
+        methods:
+          - name: hdtest2
+          - name: getdate2
