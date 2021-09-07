@@ -4,7 +4,7 @@ nsf:
   nsfServer: 'http://nsf-server-poc666.netease.com'
   application:
     name: hdtest2
-    version: v2
+    version: v1
     projectCode: hdpro
     envCode: prod
     zone: default
